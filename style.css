@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.70);
+  --spacing: 350px;
+
+  font-family: 'PT Serif', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: "'Zen Maru Gothic'", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 1.5rem;
+    padding: 2rem;
+    width:max-content;
+    margin-bottom: var(--spacing);
+    border-radius: 20px;
+  }
+
+  header {
+    font-family: 'Zen Maru Gothic';
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    font-family: 'Zen Maru Gothic';
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 4px;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    opacity: 0.8;
+    font-size: 2rem;
+    display: inline;
+    line-height: 1.5;
+    padding: 0.25rem;
+    
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
